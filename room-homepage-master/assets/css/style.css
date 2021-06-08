@@ -1,0 +1,216 @@
+/* icomoon */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?o2tu84');
+    src: url('../fonts/icomoon.eot?o2tu84#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?o2tu84') format('truetype'),
+        url('../fonts/icomoon.woff?o2tu84') format('woff'),
+        url('../fonts/icomoon.svg?o2tu84#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hamburger:before {
+    content: "\e900";
+}
+
+.icon-close:before {
+    content: "\e901";
+}
+
+.icon-arrow-long:before {
+    content: "\e902";
+}
+
+.icon-arrow-left:before {
+    content: "\e903";
+}
+
+.icon-arrow-right:before {
+    content: "\e904";
+}
+
+
+
+
+/* custom css */
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 1rem;
+    color: #a1a1a1;
+    line-height: 1.5;
+}
+
+@media(min-width:1200px) {
+    body {
+        line-height: 1.7;
+    }
+
+    .container {
+        max-width: 1180px;
+    }
+}
+
+@media(min-width:1600px) {
+    body {
+        font-size: 1.125rem;
+    }
+
+    .container {
+        max-width: 1580px;
+    }
+}
+
+@media(max-width:991px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000000;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.375rem;
+}
+
+@media(min-width:768px) {
+    h2 {
+        font-size: 1.6875rem;
+    }
+}
+
+@media(min-width:1200px) {
+    h2 {
+        font-size: 2.25rem;
+    }
+}
+
+@media(min-width:1600px) {
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+a {
+    transition: .2s all ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+/* slick-arrow style */
+.slick-arrow {
+    position: absolute;
+    left: 58.3%;
+    bottom: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 0.875rem 1rem;
+    line-height: 1;
+    transition: .2s all ease-in-out;
+}
+
+.slick-arrow:hover {
+    background: #454545;
+}
+
+.slick-arrow:focus {
+    outline: none;
+}
+
+.slick-prev {
+    z-index: 1;
+}
+
+/* .slick-next {
+    margin-left: 3rem;
+} */
+
+
+/* slick-arrow responsive */
+
+@media(min-width:992px) {
+    .slick-next {
+        margin-left: 3rem;
+    }
+}
+
+@media(min-width:1200px) {
+    .slick-arrow {
+        padding: 1rem 1.375rem;
+    }
+
+    .slick-next {
+        margin-left: 3.7rem;
+    }
+}
+
+@media(min-width:1600px) {
+    .slick-arrow {
+        padding: 1.375rem;
+    }
+
+    .slick-next {
+        margin-left: 3.875rem;
+    }
+}
+
+@media(max-width:991px) {
+    .slick-arrow {
+        right: 0;
+        top: 56.3%;
+        bottom: auto;
+        left: auto;
+    }
+
+    .slick-prev {
+        margin-right: 3rem;
+    }
+}
+
+@media(max-width:767px) {
+    .slick-arrow {
+        top: 40%;
+    }
+}
+
+@media(max-width:575px) {
+    .slick-arrow {
+        top: 30%;
+    }
+}
